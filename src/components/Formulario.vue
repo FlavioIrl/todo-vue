@@ -1,12 +1,12 @@
 <script setup>
-    const props = defineProps(['cadastraTarefa', 'tarefaTemp', 'trocarFiltro', 'editaTarefaTempo'])
+    const props = defineProps(['cadastraTarefa', 'tarefaTemp', 'trocarFiltro', 'editaTarefaTemp'])
 </script>
 
 <template>
     <form @submit.prevent="props.cadastraTarefa">
         <div class="row">
             <div class="col">
-                <input :value="props.tarefaTemp" @change="props.editaTarefaTempo" required
+                <input :value="props.tarefaTemp" @change="props.editaTarefaTemp" required
                     type="text" placeholder="Digite a descrião da tarefa" class="form-control">
             </div>
             <div class="col-md-2">
